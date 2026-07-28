@@ -5,9 +5,6 @@
 <img height="180em" src="https://github-stats-extended.vercel.app/api/top-langs/?username=Santosh02411&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=c9d1d9"/>
 </div>
 
-<div align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Santosh02411&theme=tokyonight&hide_border=true&background=0d1117&ring=a78bfa&fire=f472b6&currStreakLabel=a78bfa" />
-</div>
 
 
 
