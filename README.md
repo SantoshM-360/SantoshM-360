@@ -1,16 +1,28 @@
-## Hi there 👋
+## 📊 GitHub Stats
 
-<div align="center">
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=220&section=header&text=Santosh%20Suresh%20Madannavar&fontSize=40&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=AI%2FML%20Engineer%20%7C%20Full-Stack%20Developer%20%7C%20Problem%20Solver&descAlignY=58&descSize=17&descColor=a78bfa" width="100%"/>
-
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=A78BFA&center=true&vCenter=true&width=650&lines=CSE+Graduate+%40+MMEC+Belagavi+(2026);AI+%2F+ML+%2F+Generative+AI+Engineer;Building+Real-World%2C+Production-Grade+AI;Flask+%C2%B7+Django+%C2%B7+React+%C2%B7+LangChain+%C2%B7+XGBoost;Open+to+SDE+%2F+ML+Engineer+%2F+Full-Stack+Roles+%F0%9F%9A%80" alt="Typing SVG" />
-</a>
 <div align="center">
 <img height="180em" src="https://github-stats-extended.vercel.app/api?username=Santosh02411&show_icons=true&theme=tokyonight&include_all_commits=true&count_private=true&hide_border=true&bg_color=0d1117&title_color=a78bfa&icon_color=a78bfa&text_color=c9d1d9"/>
 <img height="180em" src="https://github-stats-extended.vercel.app/api/top-langs/?username=Santosh02411&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=a78bfa&text_color=c9d1d9"/>
 </div>
+
 <div align="center">
 <img src="https://github-readme-streak-stats.herokuapp.com/?user=Santosh02411&theme=tokyonight&hide_border=true&background=0d1117&ring=a78bfa&fire=f472b6&currStreakLabel=a78bfa" />
 </div>
+
+
+
+
+
+<div align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Santosh02411&bg_color=0d1117&color=a78bfa&line=7c3aed&point=f472b6&area=true&hide_border=true&days=30" />
+</div>
+
+<details>
+<summary align="center"><b>📅 last few months Activity — click to expand</b></summary>
+<br/>
+
+<div align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Santosh02411&bg_color=0d1117&color=a78bfa&line=7c3aed&point=f472b6&area=true&hide_border=true&days=90" />
+</div>
+
+</details>
