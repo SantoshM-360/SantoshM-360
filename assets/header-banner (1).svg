@@ -1,0 +1,86 @@
+<svg viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f0c29"/>
+      <stop offset="55%" stop-color="#1a1642"/>
+      <stop offset="100%" stop-color="#24243e"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#a78bfa" stroke-width="1" opacity="0.08"/>
+    </pattern>
+  </defs>
+
+  <rect width="1200" height="300" fill="url(#bg)"/>
+  <rect width="1200" height="300" fill="url(#grid)"/>
+
+  <g stroke="#a78bfa" stroke-width="1" opacity="0.55">
+    <g><line x1="14" y1="26" x2="38" y2="26"/><line x1="26" y1="14" x2="26" y2="38"/><circle cx="26" cy="26" r="7" fill="none"/></g>
+    <g><line x1="1162" y1="26" x2="1186" y2="26"/><line x1="1174" y1="14" x2="1174" y2="38"/><circle cx="1174" cy="26" r="7" fill="none"/></g>
+    <g><line x1="14" y1="274" x2="38" y2="274"/><line x1="26" y1="262" x2="26" y2="286"/><circle cx="26" cy="274" r="7" fill="none"/></g>
+    <g><line x1="1162" y1="274" x2="1186" y2="274"/><line x1="1174" y1="262" x2="1174" y2="286"/><circle cx="1174" cy="274" r="7" fill="none"/></g>
+  </g>
+
+  <!-- ============ left column: identity + title block ============ -->
+  <text x="62" y="56" font-family="Consolas, 'JetBrains Mono', monospace" font-size="16"
+        letter-spacing="4" fill="#a78bfa" opacity="0.9">SPEC — SOFTWARE ENGINEER</text>
+
+  <text x="60" y="128" font-family="Verdana, 'Segoe UI', sans-serif" font-size="54" font-weight="700"
+        letter-spacing="0.5" fill="#f4f2fb">SANTOSH S. MADANNAVAR</text>
+
+  <line x1="62" y1="145" x2="760" y2="145" stroke="#a78bfa" stroke-width="3"
+        stroke-dasharray="698" stroke-dashoffset="698">
+    <animate attributeName="stroke-dashoffset" values="698;0;-698" dur="5s" repeatCount="indefinite"/>
+  </line>
+
+  <text x="62" y="182" font-family="Georgia, serif" font-style="italic" font-size="20" fill="#c9c3e0" opacity="0.9">
+    B.E. Computer Science &amp; Engineering — Class of 2026
+  </text>
+
+  <rect x="60" y="205" width="560" height="72" fill="none" stroke="#a78bfa" stroke-width="1" opacity="0.5"/>
+  <line x1="340" y1="205" x2="340" y2="277" stroke="#a78bfa" stroke-width="1" opacity="0.35"/>
+  <line x1="60" y1="241" x2="620" y2="241" stroke="#a78bfa" stroke-width="1" opacity="0.35"/>
+
+  <g font-family="Consolas, 'JetBrains Mono', monospace" font-size="14" letter-spacing="0.5">
+    <text x="72" y="228" fill="#f4f2fb"><tspan fill="#8b83b0">NAME  </tspan>S.S. MADANNAVAR</text>
+    <text x="352" y="228" fill="#f4f2fb"><tspan fill="#8b83b0">DISCIPLINE  </tspan>CSE — 2026</text>
+    <text x="72" y="264" fill="#f4f2fb" font-size="13"><tspan fill="#8b83b0">ROLES  </tspan>SDE / FULL-STACK / ML</text>
+    <text x="372" y="264" fill="#22c55e">OPEN TO WORK</text>
+    <circle cx="352" cy="260" r="5" fill="#22c55e">
+      <animate attributeName="opacity" values="1;0.35;1" dur="1.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ============ right column: three equal, animated callouts ============ -->
+  <line x1="820" y1="65" x2="820" y2="245" stroke="#8b83b0" stroke-width="1" stroke-dasharray="3,4" opacity="0.6"/>
+
+  <g stroke-width="2" opacity="0.85">
+    <path d="M820,90  H920" stroke="#a78bfa"/>
+    <path d="M820,165 H920" stroke="#22d3ee"/>
+    <path d="M820,240 H920" stroke="#f472b6"/>
+  </g>
+  <g>
+    <circle cx="820" cy="90"  r="5" fill="#a78bfa"/>
+    <circle cx="820" cy="165" r="5" fill="#22d3ee"/>
+    <circle cx="820" cy="240" r="5" fill="#f472b6"/>
+  </g>
+
+  <!-- traveling pulses, continuous -->
+  <circle r="5" fill="#c4b5fd">
+    <animateMotion dur="2.2s" repeatCount="indefinite" path="M820,90 H920"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="2.2s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="5" fill="#67e8f9">
+    <animateMotion dur="2.2s" begin="0.5s" repeatCount="indefinite" path="M820,165 H920"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="2.2s" begin="0.5s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="5" fill="#f9a8d4">
+    <animateMotion dur="2.2s" begin="1s" repeatCount="indefinite" path="M820,240 H920"/>
+    <animate attributeName="opacity" values="0;1;1;0" dur="2.2s" begin="1s" repeatCount="indefinite"/>
+  </circle>
+
+  <g font-family="Consolas, 'JetBrains Mono', monospace" font-size="23" font-weight="700" letter-spacing="1.3">
+    <text x="935" y="97"  fill="#a78bfa">MACHINE LEARNING</text>
+    <text x="935" y="172" fill="#22d3ee">FULL-STACK / WEB</text>
+    <text x="935" y="247" fill="#f472b6">GENERATIVE AI</text>
+  </g>
+</svg>
