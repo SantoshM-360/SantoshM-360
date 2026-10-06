@@ -1,5 +1,4 @@
-
-name: Generate Snake
+name: Generate Activity Graph
 
 on:
   schedule:
@@ -17,12 +16,65 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
-      - uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+      - name: Build activity graph
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_USER: Santosh02411
+          DAYS: "30"
+        run: |
+          mkdir -p dist
+          python3 - <<'EOF'
+          import os, json, urllib.request, datetime as dt
+
+          user, token = os.environ["GH_USER"], os.environ["GH_TOKEN"]
+          days = int(os.environ["DAYS"])
+          end = dt.datetime.utcnow()
+          start = end - dt.timedelta(days=days - 1)
+          fmt = "%Y-%m-%dT%H:%M:%SZ"
+
+          query = """query($u:String!,$from:DateTime!,$to:DateTime!){
+            user(login:$u){contributionsCollection(from:$from,to:$to){
+              contributionCalendar{weeks{contributionDays{date contributionCount}}}}}}"""
+          body = json.dumps({"query": query, "variables": {
+              "u": user, "from": start.strftime(fmt), "to": end.strftime(fmt)}}).encode()
+          req = urllib.request.Request("https://api.github.com/graphql", data=body,
+              headers={"Authorization": "bearer " + token, "Content-Type": "application/json"})
+          data = json.load(urllib.request.urlopen(req))
+          weeks = data["data"]["user"]["contributionsCollection"]["contributionCalendar"]["weeks"]
+
+          pts = []
+          for w in weeks:
+              for d in w["contributionDays"]:
+                  day = dt.date.fromisoformat(d["date"])
+                  if start.date() <= day <= end.date():
+                      pts.append((day, d["contributionCount"]))
+
+          W, H, L, R, T, B = 800, 300, 50, 25, 45, 45
+          maxv = max([c for _, c in pts] + [1])
+          n = max(len(pts) - 1, 1)
+          X = lambda i: L + i * (W - L - R) / n
+          Y = lambda v: H - B - v * (H - T - B) / maxv
+
+          s = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" font-family="Segoe UI,Arial,sans-serif">',
+               f'<rect width="{W}" height="{H}" rx="8" fill="#0d1117"/>',
+               f'<text x="{W/2}" y="26" text-anchor="middle" font-size="15" font-weight="600" fill="#a78bfa">Contributions - last {days} days</text>']
+          for k in range(5):
+              v = maxv * k / 4
+              y = Y(v)
+              s.append(f'<line x1="{L}" y1="{y:.1f}" x2="{W-R}" y2="{y:.1f}" stroke="#30363d" stroke-width="1"/>')
+              s.append(f'<text x="{L-8}" y="{y+4:.1f}" text-anchor="end" font-size="11" fill="#a78bfa">{v:.0f}</text>')
+          coords = [(X(i), Y(c)) for i, (_, c) in enumerate(pts)]
+          line = " ".join(f"{x:.1f},{y:.1f}" for x, y in coords)
+          s.append(f'<polygon points="{L},{H-B} {line} {X(len(pts)-1):.1f},{H-B}" fill="#7c3aed" fill-opacity="0.2"/>')
+          s.append(f'<polyline points="{line}" fill="none" stroke="#7c3aed" stroke-width="2.5" stroke-linejoin="round"/>')
+          for (x, y), (d, c) in zip(coords, pts):
+              s.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3.5" fill="#f472b6"><title>{d}: {c} contributions</title></circle>')
+          for i, (d, _) in enumerate(pts):
+              if i % 5 == 0 or i == len(pts) - 1:
+                  s.append(f'<text x="{X(i):.1f}" y="{H-B+20}" text-anchor="middle" font-size="11" fill="#a78bfa">{d.strftime("%b %d")}</text>')
+          s.append('</svg>')
+          open("dist/activity-graph.svg", "w").write("\n".join(s))
+          EOF
 
       - uses: crazy-max/ghaction-github-pages@v3.2.0
         with:
