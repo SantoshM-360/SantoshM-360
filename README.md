@@ -9,7 +9,9 @@
 </div>
 
 ---
-
+<div align="center">
+<img src="https://raw.githubusercontent.com/SantoshM-360/SantoshM-360/output/activity-graph.svg" alt="Contribution activity graph" />
+</div>
 <img align="right" alt="Coding GIF" width="340" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" />
 
 ### 🧑‍💻 About Me
