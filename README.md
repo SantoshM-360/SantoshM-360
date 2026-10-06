@@ -317,3 +317,7 @@ Add the provided snake.yml to .github/workflows/, let it run once, then uncommen
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer&text=⚡%20Code.%20Learn.%20Repeat.%20🚀&fontSize=22&fontColor=a78bfa&animation=fadeIn&fontAlignY=65"/>
 
 
+
+<div align="center">
+<img src="https://streak-stats.demolab.com/?user=Santosh02411&theme=tokyonight&hide_border=true&background=0d1117&ring=a78bfa&fire=f472b6&currStreakLabel=a78bfa" />
+</div>
