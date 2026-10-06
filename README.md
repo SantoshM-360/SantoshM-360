@@ -1,7 +1,6 @@
 
-
 <div align="center">
-<img src="https://raw.githubusercontent.com/Santosh02411/Santosh02411/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake" />
+<img src="https://raw.githubusercontent.com/SantoshM-360/SantoshM-360/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake" />
 </div>
 
 <img src="https://komarev.com/ghpvc/?username=Santosh02411&style=for-the-badge&color=7c3aed&labelColor=1e1b4b&label=PROFILE+VIEWS" />
