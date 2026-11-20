@@ -1,32 +1,16 @@
 
-<div align="center">
-<img src="https://raw.githubusercontent.com/SantoshM-360/SantoshM-360/output/github-contribution-grid-snake-dark.svg" alt="Contribution snake" />
-</div>
 
+<div align="center">
+<img src="header-banner.svg" width="100%"/>
+<br/>
 <img src="https://komarev.com/ghpvc/?username=Santosh02411&style=for-the-badge&color=7c3aed&labelColor=1e1b4b&label=PROFILE+VIEWS" />
 <a href="https://github.com/Santosh02411?tab=followers"><img src="https://img.shields.io/github/followers/Santosh02411?style=for-the-badge&color=7c3aed&labelColor=1e1b4b&label=FOLLOWERS" /></a>
 <a href="mailto:santoshmadannavar@gmail.com"><img src="https://img.shields.io/badge/Open_to_Work-success?style=for-the-badge&labelColor=1e1b4b&color=22c55e" /></a>
 </div>
 
 ---
-<div align="center">
-<img src="https://raw.githubusercontent.com/SantoshM-360/SantoshM-360/output/activity-graph.svg" alt="Contribution activity graph" />
-</div>
-<img align="right" alt="Coding GIF" width="340" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" />
--------------
 
-<div align="center">
-<img src="https://raw.githubusercontent.com/SantoshM-360/SantoshM-360/output/activity-graph.svg" alt="Contribution activity graph" />
-</div>
-<div align="center">
-<img src="https://raw.githubusercontent.com/SantoshM-360/SantoshM-360/output/activity-graph.svg" alt="Contribution activity graph" />
-</div>
-<div align="center">
-<img src="https://raw.githubusercontent.com/SantoshM-360/SantoshM-360/output/activity-graph.svg" alt="Contribution activity graph" />
-</div>
-<div align="center">
-<img src="https://raw.githubusercontent.com/SantoshM-360/SantoshM-360/output/activity-graph.svg" alt="Contribution activity graph" />
-</div>
+<img align="right" alt="Coding GIF" width="340" src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" />
 
 ### 🧑‍💻 About Me
 
@@ -288,22 +272,16 @@ class Santosh:
 </div>
 
 <div align="center">
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Santosh02411&theme=tokyonight&hide_border=true&background=0d1117&ring=a78bfa&fire=f472b6&currStreakLabel=a78bfa" />
+<img src="https://streak-stats.demolab.com/?user=Santosh02411&theme=tokyonight&hide_border=true&background=0d1117&ring=a78bfa&fire=f472b6&currStreakLabel=a78bfa" />
 </div>
 
 
-
-
-
-
-
-<details>
-<summary align="center"><b>📅 last few months Activity — click to expand</b></summary>
-<br/>
-
+</div>
 <div align="center">
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=Santosh02411&bg_color=0d1117&color=a78bfa&line=7c3aed&point=f472b6&area=true&hide_border=true&days=90" />
+<img src="https://raw.githubusercontent.com/SantoshM-360/SantoshM-360/output/activity-graph.svg" alt="Contribution activity graph" />
 </div>
+
+
 
 </details>
 
@@ -333,7 +311,3 @@ Add the provided snake.yml to .github/workflows/, let it run once, then uncommen
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer&text=⚡%20Code.%20Learn.%20Repeat.%20🚀&fontSize=22&fontColor=a78bfa&animation=fadeIn&fontAlignY=65"/>
 
 
-
-<div align="center">
-<img src="https://streak-stats.demolab.com/?user=Santosh02411&theme=tokyonight&hide_border=true&background=0d1117&ring=a78bfa&fire=f472b6&currStreakLabel=a78bfa" />
-</div>
