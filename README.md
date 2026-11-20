@@ -1,5 +1,3 @@
-
-
 <div align="center">
 <img src="header-banner.svg" width="100%"/>
 <br/>
@@ -20,7 +18,7 @@ class Santosh:
         self.name     = "Santosh Suresh Madannavar"
         self.role     = "CSE Graduate @ MMEC Belagavi (2026)"
         self.passion  = ["AI/ML", "Generative AI", "Agentic Systems", "Real-world Problem Solving"]
-        self.stack    = ["Python", "Flask", "Django", "React", "XGBoost", "scikit-learn", "LangChain"]
+        self.stack    = ["Python", "FastAPI", "Flask", "React", "LangChain/LangGraph", "XGBoost", "PostgreSQL"]
         self.focus    = "Applied GenAI, ML Pipelines & Full-Stack Systems"
         self.location = "Belagavi, Karnataka 🇮🇳"
         self.email    = "santoshmadannavar@gmail.com"
@@ -32,27 +30,29 @@ class Santosh:
 - 🎓 **B.E. CSE Graduate** — Maratha Mandal's Engineering College, Belagavi (CGPA: 8.67/10)
 - 💼 Data Science Intern @ **EchoBrains Technologies** — built end-to-end ML pipelines & deployed them as Flask REST APIs
 - 🤖 AI Fellow — **VTU Bharat Unnati (TechLeap) Program**, recognized as a **top fellow** for Generative AI & Agentic workflow delivery
-- 🔍 Applied hands-on with **LangChain, RAG, and LLM-powered agentic applications**
-- 🌐 Full-stack deployments via **Flask, Django & React** — I ship products, not just notebooks
-- 💬 Ask me about: **ML pipelines, RAG/LangChain, Flask APIs, Web development ,Full-Stack Development**
+- 🔍 Building **agentic RAG systems** (LangChain, LangGraph, vector search) and LLM-powered applications
+- 🌐 Full-stack deployments via **FastAPI, Flask, Django & React** — I ship products, not just notebooks
+- 💬 Ask me about: **ML pipelines, RAG/agentic AI, FastAPI/Flask APIs, Full-Stack Development**
 <br clear="right"/>
 
 ## 🔨 Currently Working On
 
 <div align="center">
 
-### 📦 [Delivery_Sync](https://github.com/Santosh02411/Delivery_Sync) — Offline-First Delivery Status Sync
+### 🔎 [CodeScout AI](https://github.com/Santosh02411/codebase_agent) — AI Codebase Intelligence & Code Review Agent
 
-**The problem:** Delivery updates fail the moment a rider loses signal in a low-network area — status changes get lost instead of just delayed.
+**The problem:** Developers waste hours tracing bugs and reviewing code across large repositories.
 
-**What I'm building:** An offline-first app that queues status updates locally and syncs them the moment connectivity returns, with conflict resolution for updates made while offline.
+**What I'm building:** An agentic RAG system that indexes a GitHub repo, retrieves the relevant code, reasons about bugs, reviews code, generates patches and reports whether the fix actually worked.
 
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![IndexedDB](https://img.shields.io/badge/IndexedDB-FF6F00?style=for-the-badge&logo=html5&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
+![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/pgvector-336791?style=for-the-badge&logo=postgresql&logoColor=white)
+![Gemini API](https://img.shields.io/badge/Gemini_API-8E75B2?style=for-the-badge&logo=googlegemini&logoColor=white)
 
-🚧 **Status:** In active development — building the offline sync & conflict-resolution logic
+🌐 **Live:** [Frontend](https://ai-codebase-intelligence-debugging.vercel.app/) · [API](https://ai-codebase-intelligence-debugging-agent.onrender.com/)
+
+🚧 **Status:** Live and being improved — retrieval quality, evaluation and review features
 
 </div>
 
@@ -93,6 +93,45 @@ class Santosh:
 ## 🚀 Major Projects
 
 <details open>
+<summary><b>🔎 CodeScout AI — Codebase Intelligence & Debugging Agent</b></summary>
+<br>
+
+> Agentic RAG system that answers questions about a repo, reviews code, finds bugs and generates patches.
+
+**Key Features**
+- Code-aware chunking, hybrid search and reranking over indexed GitHub repositories
+- Tool-calling agent that proposes a patch and runs tests to verify the fix
+- Deployed with a FastAPI backend (Render) and a web frontend (Vercel)
+
+| | |
+|---|---|
+| 🔗 **Repo** | [codebase_agent](https://github.com/Santosh02411/codebase_agent) |
+| 🌐 **Live** | [Frontend](https://ai-codebase-intelligence-debugging.vercel.app/) |
+| 🤖 **AI** | LangChain/LangGraph, Gemini API, embeddings + vector DB |
+| 🛠️ **Backend** | Python, FastAPI, PostgreSQL |
+
+</details>
+
+<details>
+<summary><b>🧭 National Missing Persons & Reunification Network</b></summary>
+<br>
+
+> Full-stack platform where families register missing-person cases and the public submits sightings for verified authorities to review.
+
+**Key Features**
+- JWT auth with role-based access (reporter, authority, admin), TOTP two-factor auth and login lockout
+- Geo-search for nearby sightings, rate limiting, audit log and email verification
+- Cases routed to a chosen police station or NGO, with pytest and GitHub Actions CI
+
+| | |
+|---|---|
+| 🌐 **Live** | [missing-persons-network.vercel.app](https://missing-persons-network.vercel.app) |
+| 🛠️ **Stack** | FastAPI, PostgreSQL/PostGIS, Redis, React + Vite |
+| ☁️ **Deploy** | Render, Vercel, Neon, Upstash |
+
+</details>
+
+<details>
 <summary><b>❄️ Cold Weather EV Range Degradation Modeler</b></summary>
 <br>
 
@@ -178,9 +217,14 @@ class Santosh:
 
 | Project | Description | Tech |
 |---|---|---|
-| 🏥 [Quick Aid](https://github.com/Santosh02411/Quick-Aid) | An AI Medical Assistant for real-time injury detection via computer vision | Python, Flask, OpenCV, ML |
-| 💳 [FraudGuard](https://github.com/Santosh02411/fraudguard) | Fraud detection system flagging suspicious transactions before approval | Python, Scikit-learn, Flask, SQLite |
-| 🌱 [Krushi](https://github.com/Santosh02411/krushi) | AI platform for crop selection & farmer advisory using soil/climate data | Python, Flask, Scikit-learn, Pandas |
+| 🏀 [CourtVision AI](https://github.com/Santosh02411/CourtVision-AI) | NBA live intelligence and predictive analytics with an AI analyst | Python, Flask, Socket.IO, XGBoost, PyTorch |
+| 🛡️ [DeepShield AI](https://github.com/Santosh02411/DeepShield-AI) | Deepfake and synthetic media detection with a reworked frontend | Python, Hugging Face, React |
+| 📊 [DataLens AI](https://github.com/Santosh02411/DataLens-AI) | Upload CSV/Excel, ask questions in plain English, get charts, quality checks and reports | React, TypeScript, FastAPI, Pandas, Gemini |
+| 🧪 [DataSentinel](https://github.com/Santosh02411/DataSentinel) | Data quality and drift detection platform | Python, FastAPI, Streamlit |
+| 🏥 [Quick Aid](https://github.com/Santosh02411/Quick-Aid) | AI medical assistant: injury image analysis and adaptive symptom checker with triage safety logic | Python, Flask, Gemini, OpenCV |
+| 💳 [FraudGuard](https://github.com/Santosh02411/FraudGuard-Intelligence) | Fraud detection that flags suspicious transactions, with AI memory integration | Python, Scikit-learn, Flask, SQLite |
+| 🌱 [KrushiMitra AI](https://github.com/Santosh02411/krushi) | Crop selection and farmer advisory from soil and climate data, with a no-signup demo mode | Python, Flask, Scikit-learn |
+| 📦 [Delivery_Sync](https://github.com/Santosh02411/Delivery_Sync) | Offline-first delivery status sync with conflict resolution | React, IndexedDB, FastAPI, SQLite |
 
 ---
 
@@ -204,11 +248,13 @@ class Santosh:
 ![GenAI](https://img.shields.io/badge/AI%20%2F%20ML%20%2F%20Generative%20AI-7c3aed?style=for-the-badge&labelColor=1e1b4b)
 <br/>
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-27338e?style=for-the-badge&logo=opencv&logoColor=white)
 ![XGBoost](https://img.shields.io/badge/XGBoost-189AB4?style=for-the-badge&logo=python&logoColor=white)
 ![SHAP](https://img.shields.io/badge/SHAP-1a1a1a?style=for-the-badge)
 ![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
+![Hugging Face](https://img.shields.io/badge/Hugging_Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
 ![RAG](https://img.shields.io/badge/RAG-6d28d9?style=for-the-badge)
 ![Agentic AI](https://img.shields.io/badge/Agentic_AI-6d28d9?style=for-the-badge)
 ![Prompt Engineering](https://img.shields.io/badge/Prompt_Engineering-6d28d9?style=for-the-badge)
@@ -229,10 +275,12 @@ class Santosh:
 
 ![Frameworks](https://img.shields.io/badge/Web%20%26%20Backend-7c3aed?style=for-the-badge&labelColor=1e1b4b)
 <br/>
+![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white)
@@ -243,6 +291,7 @@ class Santosh:
 <br/>
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS%20Code-0078D4?style=for-the-badge&logo=visual-studio-code&logoColor=white)
 ![Google Cloud](https://img.shields.io/badge/Google%20Cloud-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
@@ -264,6 +313,7 @@ class Santosh:
 - **Journey to Cloud: Envisioning Your Solution** — IBM SkillsBuild
 
 ---
+
 ## 📊 GitHub Stats
 
 <div align="center">
@@ -272,20 +322,8 @@ class Santosh:
 </div>
 
 <div align="center">
-<img src="https://streak-stats.demolab.com/?user=Santosh02411&theme=tokyonight&hide_border=true&background=0d1117&ring=a78bfa&fire=f472b6&currStreakLabel=a78bfa" />
+<img src="https://streak-stats.demolab.com/?user=Santosh02411&theme=tokyonight&hide_border=true&background=0d1117&ring=a78bfa&fire=f472b6&currStreakLabel=a78bfa&v=2" />
 </div>
-
-
-</div>
-<div align="center">
-<img src="https://raw.githubusercontent.com/SantoshM-360/SantoshM-360/output/activity-graph.svg" alt="Contribution activity graph" />
-</div>
-
-
-
-</details>
-
-
 
 <!--
 🐍 Bonus (real animated motion): a moving contribution "snake"
@@ -309,5 +347,3 @@ Add the provided snake.yml to .github/workflows/, let it run once, then uncommen
 
 </div>
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer&text=⚡%20Code.%20Learn.%20Repeat.%20🚀&fontSize=22&fontColor=a78bfa&animation=fadeIn&fontAlignY=65"/>
-
-
